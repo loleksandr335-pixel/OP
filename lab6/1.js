@@ -4,7 +4,6 @@ function pipe(...fns) {
             throw new TypeError('Потрібна функція');
         }
     }
-
     return function (x) {
         for (const fn of fns) {
             x = fn(x);
